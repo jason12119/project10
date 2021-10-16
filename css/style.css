@@ -1,0 +1,115 @@
+.paddingTB20 {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.paddingTB40 {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.paddingTB80 {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+.paddingLR0 {
+  padding-left: 0;
+  padding-right: 0;
+}
+.border {
+  border: 1px solid red;
+}
+.violet {
+  color: hsl(277, 64%, 61%);
+}
+body {
+  font-size: 15px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(233, 47%, 7%);
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  padding: 20px;
+}
+h1 {
+  color: hsl(0, 0%, 100%);
+  font-size: 2.4em;
+  font-weight: 700;
+  font-family: 'Lexend Deca', sans-serif;
+  padding-bottom: 20px;
+  line-height: 1.4em;
+}
+p {
+  color: hsla(0, 0%, 100%, 0.75);
+  line-height: 2em;
+  padding-bottom: 60px;
+}
+.grid-container {
+  max-width: 1440px;
+  display: flex;
+  background-color: hsl(244, 38%, 16%);
+}
+.grid-container:first-child {
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+.grid-container:last-child {
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+.grid-container .item {
+  position: relative;
+}
+.grid-container .item:first-of-type {
+  padding: 80px;
+  max-width: 570px;
+}
+.grid-container .item .overlay-violet {
+  position: absolute;
+  background-color: hsl(277, 64%, 45%);
+  opacity: 0.5;
+  width: 100%;
+  height: 100%;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+.grid-container .item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+.grid-container .item p {
+  max-width: 90%;
+}
+.grid-container .stats-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.grid-container .stats-grid .stat {
+  text-align: left;
+}
+.grid-container .stats-grid .stat h2 {
+  color: hsl(0, 0%, 100%);
+  font-size: 1.7em;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+.grid-container .stats-grid .stat span {
+  display: block;
+  text-transform: uppercase;
+  font-family: 'Lexend Deca', sans-serif;
+  font-weight: 400;
+  color: hsla(0, 0%, 100%, 0.6);
+  font-size: 0.8em;
+  letter-spacing: 1px;
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
